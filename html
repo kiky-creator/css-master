@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 1 - Button Styles</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    /* Base button */
+    .btn {
+      padding: 12px 20px;
+      margin: 10px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    /* Primary */
+    .primary {
+      background: #007bff;
+      color: white;
+      border: none;
+    }
+    .primary:hover {
+      background: #0056b3;
+    }
+
+    /* Secondary */
+    .secondary {
+      background: transparent;
+      border: 2px solid #007bff;
+      color: #007bff;
+    }
+    .secondary:hover {
+      background: #007bff;
+      color: white;
+    }
+
+    /* Danger */
+    .danger {
+      background: #dc3545;
+      color: white;
+      border: none;
+    }
+    .danger:hover {
+      background: #a71d2a;
+    }
+
+    /* Disabled */
+    .disabled {
+      background: #ccc;
+      color: #666;
+      cursor: not-allowed;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Day 1: Button Styles 🟢</h1>
+
+  <button class="btn primary">Primary</button>
+  <button class="btn secondary">Secondary</button>
+  <button class="btn danger">Danger</button>
+  <button class="btn disabled" disabled>Disabled</button>
+
+</body>
+</html>
